@@ -42,7 +42,7 @@ class Add_room extends Admin_Controller
                     array(
                         'label' => 'Price',
                         'field' => 'price',
-                        'rules' => 'required|decimal'
+                        'rules' => 'required'
                     ),
                     array(
                         'label' => 'Type',
@@ -57,7 +57,7 @@ class Add_room extends Admin_Controller
                 ));
                 if (empty($_FILES['upload_image_file']['name']))
                 {
-                        $this->form_validation->set_rules('upload_image_file', 'Image', 'required');
+                        $this->form_validation->set_rules('upload_image_file', 'Image');
                 }
                 $check_file_uplaod = FALSE;
                 $uploaded          = FALSE;
@@ -75,10 +75,10 @@ class Add_room extends Admin_Controller
                 {
                         $my_form = array(
                             'upload'       => TRUE,
-                            'caption'      => 'Add Room',
+                            'caption'      => 'Thêm phòng',
                             'action'       => current_url(),
                             'button_name'  => 'save',
-                            'button_title' => 'Add Room'
+                            'button_title' => 'Thêm phòng'
                         );
 
                         $my_inputs = array(
@@ -88,22 +88,22 @@ class Add_room extends Admin_Controller
                                 'attr' =>
                                 array(
                                     'number'      => array(
-                                        'title' => 'Number',
+                                        'title' => 'Số',
                                         'type'  => 'text',
                                         'value' => $this->form_validation->set_value('number'),
                                     ),
                                     'description' => array(
-                                        'title' => 'Description',
+                                        'title' => 'Miêu tả',
                                         'type'  => 'text',
                                         'value' => $this->form_validation->set_value('description'),
                                     ),
                                     'price'       => array(
-                                        'title' => 'Price',
+                                        'title' => 'Giá',
                                         'type'  => 'text',
                                         'value' => $this->form_validation->set_value('price'),
                                     ),
                                     'type'        => array(
-                                        'title'       => 'Type',
+                                        'title'       => 'Kiểu',
                                         'type'        => 'combo',
                                         'value'       => NULL,
                                         'combo_value' => $this->Room_type_model->as_dropdown('room_type_name')->get_all()
@@ -116,13 +116,13 @@ class Add_room extends Admin_Controller
                                 'attr' =>
                                 array(
                                     'bed'               => array(
-                                        'title' => 'Bed Count',
+                                        'title' => 'Số giường',
                                         'type'  => 'text',
                                         'value' => NULL,
                                         'value' => $this->form_validation->set_value('bed'),
                                     ),
                                     'has'               => array(
-                                        'title'          => 'Has',
+                                        'title'          => 'Có',
                                         'type'           => 'checkbox',
                                         'value'          => NULL,
                                         'checkbox_value' => for_combo_box_addroom_HAS(),

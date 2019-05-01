@@ -13,20 +13,20 @@ class Rooms extends Admin_Controller
         public function index()
         {
 
-                $this->template['table'] = $this->_render_table_view('Rooms', 'rooms', array(
+                $this->template['table'] = $this->_render_table_view('Phòng', 'rooms', array(
                     'room_image'         => 'Image',
-                    'room_number'        => 'Room Number',
-                    'room_description'   => 'Description',
-                    'room_type'          => 'Type',
-                    'room_price'         => 'Price',
-                    'room_bed_count'     => 'bed Count',
-                    'room_has_breakfast' => 'BreakFast',
-                    'room_has_aircon'    => 'Aircon',
+                    'room_number'        => 'Số phòng',
+                    'room_description'   => 'Miêu tả',
+                    'room_type'          => 'Kiểu',
+                    'room_price'         => 'Giá',
+                    'room_bed_count'     => 'Số giường',
+                    'room_has_breakfast' => 'Bữa sáng',
+                    'room_has_aircon'    => 'Máy bay',
                     'room_has_gym'       => 'Gym',
                     'room_has_tvlcd'     => 'TV LCD',
                     'room_has_wifi'      => 'Wifi',
-                    'room_best'          => 'As Best',
-                    'room_active'        => 'Active',
+                    'room_best'          => 'Tốt nhất',
+                    'room_active'        => 'Hoạt động',
                     'user'               => 'Admin'
                 ));
 

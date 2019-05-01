@@ -15,7 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <img src="<?php echo $bootstrap_dir; ?>images/slide-4.png" alt="...">
             <div class="carousel-caption">
                 <img src="<?php echo $bootstrap_dir; ?>images/stars.png" alt="">
-                <h2>Welcome to <?php echo $this->config->item('public_name'); ?></h2>
+                <h2>Chào mừng đến <?php echo $this->config->item('public_name'); ?></h2>
                 <p><?php echo $this->config->item('first_sub_desc'); ?></p>
             </div>
         </div>

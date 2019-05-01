@@ -13,10 +13,10 @@ class Room_types extends Admin_Controller
         public function index()
         {
 
-                $this->template['table'] = $this->_render_table_view('Room Types', 'room-types', array(
-                    'name'        => 'Name',
-                    'description' => 'Description',
-                    'active'      => 'Active',
+                $this->template['table'] = $this->_render_table_view('Kiểu phòng', 'room-types', array(
+                    'name'        => 'Tên',
+                    'description' => 'Miêu tả',
+                    'active'      => 'Hoạt động',
                     'user'        => 'Admin'
                 ));
 

@@ -10,7 +10,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
     <div class="mg-cart-container mg-paid">
         <aside class="mg-widget mt50" id="mg-room-cart">
-            <h2 class="mg-widget-title">Booking Details</h2>
+            <h2 class="mg-widget-title">Chi tiết Booking</h2>
             <div class="mg-widget-cart">
                 <div class="row">
                     <div class="col-md-6">
@@ -21,7 +21,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <h3 class="mg-payment-id">Your Payment ID: <?php echo $payment_id; ?></h3>
+                        <h3 class="mg-payment-id">ID thanh toán của bạn: <?php echo $payment_id; ?></h3>
                         <div class="mg-widget-cart-row">
                             <strong>Check In:</strong>
                             <span><?php echo convert_date_($this->session->userdata('check_in')); ?></span>
@@ -31,15 +31,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <span><?php echo convert_date_($this->session->userdata('check_out')); ?></span>
                         </div>
                         <div class="mg-widget-cart-row">
-                            <strong>Adults:</strong>
+                            <strong>Người lớn:</strong>
                             <span><?php echo $this->session->userdata('adult_count'); ?></span>
                         </div>
                         <div class="mg-widget-cart-row">
-                            <strong>Child:</strong>
+                            <strong>Trẻ em:</strong>
                             <span><?php echo $this->session->userdata('child_count'); ?></span>
                         </div>
                         <div class="mg-widget-cart-row">
-                            <strong>Fullname:</strong>
+                            <strong>Họ và tên:</strong>
                             <span><?php echo $this->session->userdata('lastname') . ', ' . $this->session->userdata('firstname'); ?></span>
                         </div>
                         <div class="mg-widget-cart-row">
@@ -47,12 +47,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <span><?php echo $this->session->userdata('email'); ?></span>
                         </div>
                         <div class="mg-widget-cart-row">
-                            <strong>Phone:</strong>
+                            <strong>Số điện thoại:</strong>
                             <span><?php echo $this->session->userdata('phone'); ?></span>
                         </div>
 
                         <div class="mg-cart-total">
-                            <strong>Total:</strong>
+                            <strong>Tổng:</strong>
                             <span>     
                                 <?php echo $this->config->item('currency') ?>
                                 <?php echo number_format((different_days_($this->session->userdata('check_in'), $this->session->userdata('check_out')) * $room->room_price)); ?>

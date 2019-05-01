@@ -5,8 +5,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="row">
             <div class="col-md-12">
                 <div class="mg-sec-title">
-                    <h2>Our Best Rooms</h2>
-                    <p>These best rooms chosen by our customers</p>
+                    <h2>Phòng tốt nhất của chúng tôi</h2>
+                    <p>Những phòng tốt nhất được lựa chọn bởi khách hàng của chúng tôi</p>
                 </div>
                 <div class="row">
                     <?php
@@ -26,10 +26,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                 <?php
                                                 list($price_1, $price_2) = explode('.', $room->room_price);
                                                 ?>
-                                                <div class="mg-room-price"><?php echo $this->config->item('currency') . number_format($price_1); ?><sup>.<?php echo $price_2; ?>/Night</sup></div>
+                                                <div class="mg-room-price"><?php echo $this->config->item('currency') . number_format($price_1); ?><sup>.<?php echo $price_2; ?>/Đêm</sup></div>
                                                 <p><?php echo $room->room_description; ?></p>
 <!--                                                <a href="#" class="btn btn-link">View Details <i class="fa fa-angle-double-right"></i></a>-->
-                                                <a href="<?php echo base_url('reservation/check-in/?room-id=' . $room->room_id); ?>" class="btn btn-main">Book</a>
+                                                <a href="<?php echo base_url('reservation/check-in/?room-id=' . $room->room_id); ?>" class="btn btn-main">Đặt phòng</a>
                                             </figcaption>			
                                         </figure>
                                     </div>

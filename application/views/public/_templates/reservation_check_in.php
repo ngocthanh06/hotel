@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="mg-book-now mt80">
             <div class="row">
                 <div class="col-md-3">
-                    <h2 class="mg-bn-title">Search Rooms <span class="mg-bn-big">For rates & availability</span></h2>
+                    <h2 class="mg-bn-title">Tìm kiếm phòng <span class="mg-bn-big">Đối với giá và phòng trống:</span></h2>
                 </div>
                 <div class="col-md-9">
                     <div class="mg-bn-forms">
@@ -46,7 +46,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <button type="submit" class="btn btn-main btn-block">Check Now</button>
+                                <button type="submit" class="btn btn-main btn-block">Kiểm tra ngay</button>
                             </div>
                         </div>
                         <?php echo form_close(); ?>

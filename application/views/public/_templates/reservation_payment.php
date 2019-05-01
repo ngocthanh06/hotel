@@ -7,12 +7,12 @@ echo form_open(base_url('reservation/payment'));
     <div class="row">
         <div class="col-md-8">
             <div class="mg-book-form-billing">
-                <h2 class="mg-sec-left-title">Card Info</h2>
+                <h2 class="mg-sec-left-title">Thông tin thẻ</h2>
                 <?php echo $message; ?>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="mg-book-form-input">
-                            <label>Card Number</label>
+                            <label>Số thẻ</label>
                             <input name="card_number" value="<?php echo set_value('card_number') ?>" type="text" class="form-control">
                         </div>
                     </div>
@@ -24,11 +24,11 @@ echo form_open(base_url('reservation/payment'));
                     </div>
                     <div class="col-md-12">
                         <div class="mg-book-form-input">
-                            <label>Expire</label>
+                            <label>Hết hiệu lực</label>
                             <div class="row">
                                 <div class="col-md-6">
                                     <select name="card_expire_month" class="form-control">
-                                        <option value="">Month</option>
+                                        <option value="">Tháng</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -45,7 +45,7 @@ echo form_open(base_url('reservation/payment'));
                                 </div>
                                 <div class="col-md-6">
                                     <select name="card_expire_year" class="form-control">
-                                        <option value="">Year</option>
+                                        <option value="">Năm</option>
                                         <option value="15">15</option>
                                         <option value="16">16</option>
                                         <option value="17">17</option>

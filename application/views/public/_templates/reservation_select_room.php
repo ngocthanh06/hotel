@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <!-- 11 select-room-->
 <div class="mg-available-rooms">
-    <h2 class="mg-sec-left-title">Available Rooms</h2>
+    <h2 class="mg-sec-left-title">Phòng có sẵn</h2>
     <div class="mg-avl-rooms">
         <?php
         if ($rooms):
@@ -23,19 +23,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <?php
                                         list($price_1, $price_2) = explode('.', $room->room_price);
                                         ?>
-                                        <span><?php echo $this->config->item('currency') . number_format($price_1); ?><sup>.<?php echo $price_2; ?></sup>/Night</span></h3>
+                                        <span><?php echo $this->config->item('currency') . number_format($price_1); ?><sup>.<?php echo $price_2; ?></sup>/Tối</span></h3>
                                     <p><?php echo $room->room_description; ?></p>
                                     <div class="row mg-room-fecilities">
                                         <div class="col-sm-6">
                                             <ul>
-                                                <li><i class="fp-ht-bed"></i> <?php echo $room->room_bed_count; ?> Beds</li>
+                                                <li><i class="fp-ht-bed"></i> <?php echo $room->room_bed_count; ?> Giường</li>
 
                                                 <?php if ($room->room_has_breakfast): ?>
-                                                        <li><i class="fp-ht-food"></i> Breakfast</li>
+                                                        <li><i class="fp-ht-food"></i> Ăn sáng</li>
                                                 <?php endif; ?>
 
                                                 <?php if ($room->room_has_aircon): ?>
-                                                        <li><i class="fa fa-sun-o"></i> Air conditioning</li>
+                                                        <li><i class="fa fa-sun-o"></i> Điều hòa</li>
                                                 <?php endif; ?>
                                             </ul>
                                         </div>
@@ -55,7 +55,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </ul>
                                         </div>
                                     </div>
-                                    <a href="<?php echo base_url('reservation/check-in/?room-id=' . $room->room_id); ?>" class="btn btn-main">Select This Room</a>
+                                    <a href="<?php echo base_url('reservation/check-in/?room-id=' . $room->room_id); ?>" class="btn btn-main">Chọn phòng tại đây</a>
                                 </div>
                             </div>
                         </div>

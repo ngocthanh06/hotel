@@ -31,10 +31,10 @@ class Add_room_type extends Admin_Controller
                 if (!$this->form_validation->run())
                 {
                         $my_form = array(
-                            'caption'      => 'Add Room Type',
+                            'caption'      => 'Thêm kiểu phòng',
                             'action'       => current_url(),
                             'button_name'  => 'save',
-                            'button_title' => 'Add Room Type'
+                            'button_title' => 'Thêm kiểu phòng'
                         );
 
                         $my_inputs = array(
@@ -44,12 +44,12 @@ class Add_room_type extends Admin_Controller
                                 'attr' =>
                                 array(
                                     'name'        => array(
-                                        'title' => 'Name',
+                                        'title' => 'Tên',
                                         'type'  => 'text',
                                         'value' => $this->form_validation->set_value('name'),
                                     ),
                                     'description' => array(
-                                        'title' => 'Description',
+                                        'title' => 'Miêu tả',
                                         'type'  => 'text',
                                         'value' => $this->form_validation->set_value('description'),
                                     ),

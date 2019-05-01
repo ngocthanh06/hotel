@@ -8,7 +8,7 @@ $bootstrap_dir = base_url($bootstrap_dir);
             <div class="row">
                 <div class="col-md-6 col-sm-6">
                     <div class="widget">
-                        <h2 class="mg-widget-title">Contact US</h2>
+                        <h2 class="mg-widget-title">Liên hệ với chúng tôi</h2>
                         <address><?php echo $this->config->item('address'); ?></address>
                         <p><?php echo $this->config->item('contact_number'); ?></p>
                         <p><a href="mailto:#"><?php echo $this->config->item('email'); ?></a></p>
@@ -16,7 +16,7 @@ $bootstrap_dir = base_url($bootstrap_dir);
                 </div>
                 <div class="col-md-6 col-sm-6">
                     <div class="widget">
-                        <h2 class="mg-widget-title">Social Media</h2>
+                        <h2 class="mg-widget-title">Kênh truyền thông</h2>
                         <p><?php echo $this->config->item('footer_social_media') ?></p>
                         <ul class="mg-footer-social">
                             <?php if ($this->config->item('footer_facebook')): ?>
@@ -56,7 +56,7 @@ $bootstrap_dir = base_url($bootstrap_dir);
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <p>&copy; <?php echo $this->config->item('current_year'); ?> <?php echo $this->config->item('public_name'); ?> All rights reserved.</p>
+                    
                 </div>
             </div>
         </div>
